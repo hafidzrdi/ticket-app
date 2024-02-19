@@ -7,7 +7,7 @@ const umur = prompt(`Masukkan umur anda`);
 
 if(umur > batasumur){
     alert(`Anda diperbolehkan masuk studio`);
-    const studio = prompt(`Pilih studio (A/B/C) :`);
+    const studio = prompt(`Pilih studio (A/B/C) :`).toUpperCase();
         if(studio == "A" || studio == "B" || studio == "C"){
             alert(`Tiket ${nama}, Studio ${studio}, Umur ${umur}`);
         }else{
